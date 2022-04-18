@@ -1,8 +1,8 @@
 import { useAuth0 } from "@auth0/auth0-react";
 
-import { LoginButton } from "./Login";
-import { LogoutButton } from "./Logout";
-import { Profile } from "./Profile";
+import { LoginButton } from "./components/login/Login";
+import { LogoutButton } from "./components/logout/Logout";
+import { Profile } from "./components/profile/Profile";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         {isAuthenticated ? (
           <>
             <Profile />
